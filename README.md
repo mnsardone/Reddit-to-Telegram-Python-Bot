@@ -24,10 +24,11 @@ Before working with the provided code first you need to have three things ready.
  
 * Step 2: Download all files from this page, keep it in a new folder
 
-* Step 3: Open _praw_rip.py in your text editor of choice, and starting on Line 27 fill in the information you obtained from the Reddit API. You can then save and close that file.
+* Step 3: Open praw_instance.py in your text editor of choice, and starting on Line 27 fill in the information you obtained from the Reddit API. You can then save and close that file.
   * NOTE: In this code I do not include the "password" and "username" fields as those are only needed from PRAW if you are posting to Reddit. We are only pulling down some information.
   
-* Step 4: Open _R2T_bot.py and on Line 11 copy and paste in your telegram bot token. Then on Lines 15 and 17 fill in the chat id from your public telegram channel. You can then save and close that file.
+* Step 4: Open telegram_bot.py and on Line 11 copy and paste in your telegram bot token. Then on Lines 15 and 17 fill in the chat id from your public telegram channel. For example https://t.me/testchannel turns into ``R2T_bot.send_message(chat_id="@testchannel",text=f"{message}")``. 
+You can then save and close that file.
 
 * Step 5: From here you have two options, you can use the template provided to create and customize your own method OR you can use the extremely rudimentary Tkinter GUI provided in R2T_gui.py. 
 
