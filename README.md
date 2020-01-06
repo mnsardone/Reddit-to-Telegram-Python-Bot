@@ -5,7 +5,7 @@ Simple bot using [PRAW](https://github.com/praw-dev/praw) and [python-telegram-b
 Greetings! A few months ago I wrote some very basic code that allowed me to send my GF batches of cute pictures from Reddit. Everyone I told about this was interested so I thought I might as well put the code out their so I can save at least one person a few hours of reading the PRAW documentation and writing this.
 
 ## What does it do?
-It essentially just aggregates an adjustable number of current top links from a selected subreddit and sends them to a selected telegram chat.
+It essentially just aggregates an adjustable number of current top links from a selected subreddit and sends them to a selected telegram chat. It will ignore stickied or permanent posts.
 
 ## Setup
 Before working with the provided code first you need to have three things ready.
