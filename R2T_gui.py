@@ -1,6 +1,6 @@
 from tkinter import *
-import _praw_rip
-import _R2T_bot
+import praw_instance
+import telegram_bot
 
 # command function for the button
 
@@ -10,8 +10,8 @@ def process_request():
     num = int(num_entry.get())
     msg = msg_entry.get()
 
-    manual_set = _praw_rip.PullCategory(f"{sub}", num)
-    _R2T_bot.send_cute_bot(manual_set, f"{msg}")
+    manual_set = praw_instance.PullCategory(f"{sub}", num)
+    telegram_bot.send_cute_bot(manual_set, f"{msg}")
 
     return "Task Completed!"
 
