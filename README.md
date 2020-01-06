@@ -7,11 +7,28 @@ Greetings! A few months ago I wrote some very basic code that allowed me to send
 ## What does it do?
 It essentially just aggregates an adjustable number of current top links from a selected subreddit and sends them to a selected telegram chat. It will ignore stickied or permanent posts.
 
-## Setup
+## Prerequisites
 Before working with the provided code first you need to have three things ready.
 * Obtaining a [Reddit API key](https://www.reddit.com/wiki/api)
 * Creating a [Telegram Bot](https://core.telegram.org/bots) and generating its [token](https://core.telegram.org/bots#generating-an-authorization-token)
   - Then, with your telegram account create a public channel and invite your bot to it giving it admin status
 * Making sure you have Python 3.7+ installed and make sure [PIP](https://docs.python.org/3/installing/index.html) is also installed (check PRAW and python-telegram-bot's requirements)
 
-## Instructions
+## Setup Instructions
+* Step 1: Install PRAW and python-telegram bot using the Terminal in Linux/Mac or Powershell in Windows
+
+ ```
+ py -m pip install praw
+ py -m pip install python-telegram-bot
+ ```
+ 
+* Step 2: Download all files from this page, keep it in a new folder
+
+* Step 3: Open _praw_rip.py in your text editor of choice, and starting on Line 27 fill in the information you obtained from the Reddit API. You can then save and close that file.
+  * NOTE: In this code I do not include the "password" and "username" fields as those are only needed from PRAW if you are posting to Reddit. We are only pulling down some information.
+  
+* Step 4: Open _R2T_bot.py and on Line 11 copy and paste in your telegram bot token. Then on Lines 15 and 17 fill in the chat id from your public telegram channel. You can then save and close that file.
+
+* Step 5: From here you have two options, you can use the template provided to create and customize your own method OR you can use the extremely rudimentary Tkinter GUI provided in R2T_gui.py. 
+
+  - Template Option:
