@@ -1,8 +1,8 @@
 # Reddit-to-Telegram-Python-Bot
-Simple bot using [PRAW](https://github.com/praw-dev/praw) and [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot) (those modules do all the hard stuff). Minimal knowledge of python needed or just follow README.
+Simple bot using [PRAW](https://github.com/praw-dev/praw) and [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot) (those modules do all the hard stuff). Minimal knowledge of python needed or just follow README. All credit goes to the developers for PRAW and python-telegram-bot!!!
 
 ## Background
-Greetings! A few months ago I wrote some very basic code that allowed me to send my GF batches of cute pictures from Reddit. Everyone I told about this was interested so I thought I might as well put the code out their so I can save at least one person a few hours of reading the PRAW documentation and writing this.
+Greetings! A few months ago I wrote some very basic code that allowed me to send my GF batches of cute pictures from Reddit. Everyone I told about this was interested so I thought I might as well put the code out their so I can save at least one person a few hours of reading the PRAW documentation and writing this. DISCLAIMER: I am a hobbyist so I apologize if the code is sloppy or defies conventions!
 
 ## What does it do?
 It essentially just aggregates an adjustable number of current top links from a selected subreddit and sends them to a selected telegram chat. It will ignore stickied or permanent posts.
@@ -32,4 +32,7 @@ You can then save and close that file.
 
 * Step 5: From here you have two options, you can use the template provided to create and customize your own method OR you can use the extremely rudimentary Tkinter GUI provided in R2T_gui.py. 
 
-  - Template Option:
+  - Template Option: This option is best for operations you would like to schedule and run repeatedly, or add to a larger body of code. The template.py file includes comments that explains what to enter and where.
+  - GUI: Better for one off operations, or people that don't like messing with scheduling. Just the run the GUI file and follow the prompts
+  
+* Step 6: Enjoy the results! Use this to send stuff to yourself or someone you care about or want to impress!
