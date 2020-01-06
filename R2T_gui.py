@@ -11,7 +11,7 @@ def process_request():
     msg = msg_entry.get()
 
     manual_set = praw_instance.PullCategory(f"{sub}", num)
-    telegram_bot.send_cute_bot(manual_set, f"{msg}")
+    telegram_bot.send_telegram_bot(manual_set, f"{msg}")
 
     return "Task Completed!"
 
