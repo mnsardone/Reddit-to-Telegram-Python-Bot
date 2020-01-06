@@ -1,6 +1,6 @@
 # This is the R2PBot Module
 import telegram
-import praw_rip
+import praw_instance
 
 
 def send_R2T_bot(pull_cat, message):
