@@ -4,7 +4,7 @@ import praw_instance
 
 
 def send_R2T_bot(pull_cat, message):
-    if not isinstance(pull_cat, _praw_rip.PullCategory):
+    if not isinstance(pull_cat, praw_instance.PullCategory):
         raise TypeError("This needs to be an instance off PullCategory")
     else:
         R2T_bot = telegram.Bot(
